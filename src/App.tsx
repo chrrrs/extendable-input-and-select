@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Input } from "./tailwind/ui/Input";
+import { TextField } from "./tailwind/ui/TextField";
 import "./styles.css";
 
 export default function App() {
@@ -11,7 +12,14 @@ export default function App() {
         <Input
           value={value}
           onChange={(event) => setValue(event.target.value)}
-          label="Test"
+          label="Generic Input"
+        />
+
+        <TextField
+          value={value}
+          onChange={(event) => setValue(event.target.value)}
+          label="TextField"
+          infoText="lorem ipsum"
         />
       </div>
     </div>

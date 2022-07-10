@@ -4,8 +4,8 @@ import { InputLeftElement, InputRightElement } from "../InputGroup/InputGroup";
 import { InputElement, InputElementProps } from "../InputElement";
 
 export interface InputProps extends InputElementProps {
-  leftElement: ReactNode;
-  rightElement: ReactNode;
+  leftElement?: ReactNode;
+  rightElement?: ReactNode;
   errorText?: string;
 }
 
@@ -16,7 +16,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
     <>
       <InputGroup>
         {leftElement && <InputLeftElement>{leftElement}</InputLeftElement>}
-        <InputElement ref={ref} isInvalid={isInvalid} {...rest} />
+        <InputElement ref={ref} isInvalid={isInvalid} hint="test" {...rest} />
         {rightElement && <InputRightElement>{rightElement}</InputRightElement>}
       </InputGroup>
       {isInvalid && Boolean(errorText) && <div>{errorText}</div>}
