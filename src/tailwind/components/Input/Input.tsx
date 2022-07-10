@@ -51,7 +51,7 @@ const Input: FC<InputProps> = (props) => {
     setHasBeenBlurred(true);
     onBlur?.(event);
   };
-  const showError = submitted
+  const showError = !submitted
     ? isInvalid && errorText
     : isInvalid && errorText && hasBeenBlurred;
 

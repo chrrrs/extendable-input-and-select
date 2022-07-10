@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Input } from "./tailwind";
+import { Input } from "./tailwind/ui/Input";
 import "./styles.css";
 
 export default function App() {
@@ -7,11 +7,13 @@ export default function App() {
 
   return (
     <div className="container mx-auto w-4/5 my-10">
-      <Input
-        value={value}
-        onChange={(event) => setValue(event.target.value)}
-        label="Test"
-      />
+      <div className="grid cols-1 gap-4">
+        <Input
+          value={value}
+          onChange={(event) => setValue(event.target.value)}
+          label="Test"
+        />
+      </div>
     </div>
   );
 }
