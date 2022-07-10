@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`play-web ui-shared/headwind/components/Input Input 1`] = `
+<div
+  className="px-4"
+>
+  <div>
+    <div
+      className="relative flex justify-center items-center"
+    >
+      <input
+        aria-invalid={false}
+        aria-label="Story"
+        className="block bg-white typo-body-m w-full box-border appearance-none h-12 rounded px-3 pt-4 pb-0 border border-solid border-grey-300 focus:border-grey-900 focus-visible:outline-none empty:focus:placeholder:opacity-100 placeholder:opacity-0 input empty"
+        onBlur={[Function]}
+        onChange={[Function]}
+        value=""
+      />
+      <label
+        className="absolute top-1/4 left-3 text-grey-700 typo-body-m pointer-events-none label"
+        data-label-hint=""
+      >
+        Story
+      </label>
+    </div>
+  </div>
+</div>
+`;

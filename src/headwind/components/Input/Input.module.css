@@ -1,0 +1,36 @@
+.label {
+  @apply typo-body-2xs;
+
+  transform-origin: 0 0;
+  transform: translateY(-45%);
+  transition: all 0.2s ease-out;
+  will-change: all;
+
+  &::after {
+    content: attr(data-label-hint);
+    opacity: 100%;
+    transition: opacity 0.2s ease-out;
+    will-change: opacity;
+  }
+}
+
+.input.empty:not(:focus) ~ .label {
+  @apply typo-body-m;
+
+  transform: scale(1) translateY(0);
+
+  &::after {
+    opacity: 0%;
+    content: '';
+  }
+}
+
+/* the following rules removes the up/down arrows in desktop browsers while preserving the numerical keyboard on mobile devices */
+.input[type='number'] {
+  appearance: textfield;
+}
+
+.input[type='number']::-webkit-inner-spin-button,
+.input[type='number']::-webkit-outer-spin-button {
+  appearance: none;
+}

@@ -1,0 +1,191 @@
+.values {
+  --borderWidth: 2px;
+  --borderWidthIcon: 12px;
+  --paddingHorizontal: 32px;
+  --paddingTop: 12px;
+  --paddingBottom: 10px;
+  --borderWidth-small: 2px;
+  --paddingHorizontal-small: 24px;
+  --paddingTop-small: 8.5px;
+  --paddingBottom-small: 5.5px;
+}
+
+.button {
+  composes: values;
+
+  @apply font-bold typo-body-m text-center cursor-pointer relative no-underline text-white whitespace-nowrap inline-block duration-75;
+
+  border: var(--borderWidth) solid transparent;
+  border-radius: 100px;
+  line-height: 26px;
+  outline: 0;
+  padding: calc(var(--paddingTop) - var(--borderWidth))
+    calc(var(--paddingHorizontal) - var(--borderWidth))
+    calc(var(--paddingBottom) - var(--borderWidth));
+
+  & svg {
+    @apply inline-block relative w-auto;
+
+    top: -1px;
+  }
+
+  &.hasIcon {
+    padding-left: calc(30px - var(--borderWidth));
+  }
+
+  &.hasIcon.right {
+    padding-left: calc(32px - var(--borderWidth));
+    padding-right: calc(23px - var(--borderWidth));
+  }
+
+  @media (max-width: theme('screens.lg')) {
+    padding: calc(var(--paddingTop-small) - var(--borderWidth-small))
+      calc(var(--paddingHorizontal-small) - var(--borderWidth-small))
+      calc(var(--paddingBottom-small) - var(--borderWidth-small));
+
+    &.hasIcon {
+      padding-left: calc(22px - var(--borderWidth));
+    }
+
+    &.hasIcon.right {
+      padding-left: calc(24px - var(--borderWidth));
+      padding-right: calc(16px - var(--borderWidth));
+    }
+  }
+}
+
+.small {
+  padding: calc(var(--paddingTop-small) - var(--borderWidth-small))
+    calc(var(--paddingHorizontal-small) - var(--borderWidth-small))
+    calc(var(--paddingBottom-small) - var(--borderWidth-small));
+}
+
+.hasIcon svg {
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+  backface-visibility: hidden;
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    margin-left: 4px;
+    margin-right: 0;
+  }
+}
+
+.hasIcon.small .right {
+  margin-left: 4px;
+  left: 8px;
+}
+
+.hasIcon.small .left {
+  right: 0;
+  left: 0;
+  margin-left: 0;
+}
+
+.secondary {
+  border-color: currentColor;
+}
+
+.flat {
+  padding: 0;
+  border-color: transparent;
+}
+
+/* Primary */
+.primary:not(.disabled).play-blue {
+  @apply bg-play-blue hover:bg-play-blue-hover;
+}
+
+.primary:not(.disabled).cta-green {
+  @apply bg-cta-green hover:bg-cta-green-hover;
+}
+
+.primary:not(.disabled).link-blue {
+  @apply bg-link-blue hover:bg-link-blue-hover;
+}
+
+.primary:not(.disabled).white {
+  @apply bg-white hover:bg-white-hover text-black;
+}
+
+.primary:not(.disabled).grey900 {
+  @apply bg-grey-900 hover:bg-grey-900-hover;
+}
+
+.primary:not(.disabled).tv2-sport {
+  @apply bg-tv2-sport hover:bg-tv2-sport-hover;
+}
+
+.primary:not(.disabled).tv2-vejret {
+  @apply bg-tv2-vejret hover:bg-tv2-vejret-hover;
+}
+
+.primary:not(.disabled).tvtid {
+  @apply bg-tvtid hover:bg-tvtid-hover;
+}
+
+.primary:not(.disabled).transparent {
+  @apply bg-transparent;
+}
+
+/* Secondary */
+.secondary:not(.disabled).play-blue,
+.flat:not(.disabled).play-blue {
+  @apply text-play-blue hover:text-play-blue-hover;
+}
+
+.secondary:not(.disabled).cta-green,
+.flat:not(.disabled).cta-green {
+  @apply text-cta-green-hover hover:text-cta-green-hover;
+}
+
+.secondary:not(.disabled).link-blue,
+.flat:not(.disabled).link-blue {
+  @apply text-link-blue hover:text-link-blue-hover;
+}
+
+.secondary:not(.disabled).white,
+.flat:not(.disabled).white {
+  @apply text-white hover:text-white-hover;
+}
+
+.secondary:not(.disabled).grey-900,
+.flat:not(.disabled).grey-900 {
+  @apply text-grey-900 hover:text-grey-900-hover;
+}
+
+.secondary:not(.disabled).tv2-sport,
+.flat:not(.disabled).tv2-sport {
+  @apply text-tv2-sport hover:text-tv2-sport-hover;
+}
+
+.secondary:not(.disabled).tv2-vejret,
+.flat:not(.disabled).tv2-vejret {
+  @apply text-tv2-vejret hover:text-tv2-vejret-hover;
+}
+
+.secondary:not(.disabled).tvtid,
+.flat:not(.disabled).tvtid {
+  @apply text-tvtid hover:text-tvtid-hover;
+}
+
+.secondary:not(.disabled).transparent,
+.flat:not(.disabled).transparent {
+  @apply text-transparent;
+}
+
+.primary.disabled {
+  @apply bg-grey-300 text-grey-500 cursor-default border-transparent;
+}
+
+.secondary.disabled {
+  @apply border-grey-300 text-grey-500 cursor-default;
+}
+
+.flat.disabled {
+  @apply text-grey-500 cursor-default;
+}

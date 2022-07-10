@@ -1,0 +1,684 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`play-web ui-shared/headwind/utilities/typography Usage scales 1`] = `
+<div
+  className="container"
+>
+  <h1
+    className="headline-2xl"
+  >
+     usage scale
+  </h1>
+  <div
+    className="table"
+  >
+    <div
+      className="tableRowHead"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 1,
+        }
+      }
+    >
+      Styles
+    </div>
+    <div
+      className="tableRowHead"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 1,
+        }
+      }
+    >
+      Weight
+    </div>
+    <div
+      className="tableRowHead"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 1,
+        }
+      }
+    >
+      px
+    </div>
+    <div
+      className="tableRowHead"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 1,
+        }
+      }
+    >
+      Line height
+    </div>
+    <div
+      className="tableRowHead"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 1,
+        }
+      }
+    >
+      Size class
+    </div>
+    <div
+      className="headline3XL tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 2,
+        }
+      }
+    >
+      Headline 3XL
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 2,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 2,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 2,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 2,
+        }
+      }
+    >
+      3XL
+    </div>
+    <div
+      className="headline2XL tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 3,
+        }
+      }
+    >
+      Headline 2XL
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 3,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 3,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 3,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 3,
+        }
+      }
+    >
+      2XL
+    </div>
+    <div
+      className="headlineXL tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 4,
+        }
+      }
+    >
+      Headline XL
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 4,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 4,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 4,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 4,
+        }
+      }
+    >
+      XL
+    </div>
+    <div
+      className="headlineL tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 5,
+        }
+      }
+    >
+      Headline L
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 5,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 5,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 5,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 5,
+        }
+      }
+    >
+      L
+    </div>
+    <div
+      className="headlineM tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 6,
+        }
+      }
+    >
+      Headline M
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 6,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 6,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 6,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 6,
+        }
+      }
+    >
+      M
+    </div>
+    <div
+      className="bodyM tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 7,
+        }
+      }
+    >
+      Body M
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 7,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 7,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 7,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 7,
+        }
+      }
+    >
+      M
+    </div>
+    <div
+      className="bodyS tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 8,
+        }
+      }
+    >
+      Body S
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 8,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 8,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 8,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 8,
+        }
+      }
+    >
+      S
+    </div>
+    <div
+      className="bodyXS tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 9,
+        }
+      }
+    >
+      Body XS
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 9,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 9,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 9,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 9,
+        }
+      }
+    >
+      XS
+    </div>
+    <div
+      className="body2XS tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 10,
+        }
+      }
+    >
+      Body 2XS
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 10,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 10,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 10,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 10,
+        }
+      }
+    >
+      2XS
+    </div>
+    <div
+      className="search tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 11,
+        }
+      }
+    >
+      Search
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 11,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 11,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 11,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 11,
+        }
+      }
+    >
+      XL
+    </div>
+    <div
+      className="buttonText tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 12,
+        }
+      }
+    >
+      Button text
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 12,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 12,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 12,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 12,
+        }
+      }
+    >
+      M
+    </div>
+    <div
+      className="navigation tableRow"
+      style={
+        Object {
+          "gridColumnStart": 1,
+          "gridRowStart": 13,
+        }
+      }
+    >
+      navigation
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 2,
+          "gridRowStart": 13,
+        }
+      }
+    >
+      NaN
+    </div>
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 3,
+          "gridRowStart": 13,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 4,
+          "gridRowStart": 13,
+        }
+      }
+    />
+    <div
+      className="tableRow"
+      style={
+        Object {
+          "gridColumnStart": 5,
+          "gridRowStart": 13,
+        }
+      }
+    >
+      XS
+    </div>
+  </div>
+</div>
+`;

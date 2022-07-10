@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './utilities/typography.css';
+@import './utilities/spacing.css';
+
+body {
+  @apply font-alright;
+}
+
+svg,
+img {
+  display: inline;
+}
