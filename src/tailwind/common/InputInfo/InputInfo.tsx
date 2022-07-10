@@ -1,12 +1,12 @@
-import React, { FC, useState } from 'react';
-import { Information } from '@tv2/ui-icons/components/group/Primary';
-import { ClickAwayListener } from '../../utilities/ClickAwayListener';
+import React, { FC, useState } from "react";
+import { AlertCircle } from "react-feather";
+import { ClickAwayListener } from "../../utilities/ClickAwayListener";
 
 export interface InputInfoProps {
   text: string;
 }
 
-export const InputInfo: FC<InputInfoProps> = props => {
+export const InputInfo: FC<InputInfoProps> = (props) => {
   const { text } = props;
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
@@ -20,7 +20,7 @@ export const InputInfo: FC<InputInfoProps> = props => {
             className="cursor-pointer border-none"
             onClick={() => setIsVisible(!isVisible)}
           >
-            <Information />
+            <AlertCircle />
           </button>
           {isVisible && (
             <div
