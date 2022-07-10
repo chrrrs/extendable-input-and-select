@@ -8,11 +8,19 @@ export default function App() {
 
   return (
     <div className="container mx-auto w-4/5 my-10">
-      <div className="grid cols-1 gap-4">
+      <div className="grid cols-1 gap-10">
         <Input
           value={value}
           onChange={(event) => setValue(event.target.value)}
           label="Generic Input"
+        />
+
+        <Input
+          value={value}
+          onChange={(event) => setValue(event.target.value)}
+          label="Generic Input with error"
+          isInvalid={true}
+          errorText="Error text from generic input"
         />
 
         <TextField
@@ -20,6 +28,15 @@ export default function App() {
           onChange={(event) => setValue(event.target.value)}
           label="TextField"
           infoText="lorem ipsum"
+        />
+
+        <TextField
+          value={value}
+          onChange={(event) => setValue(event.target.value)}
+          label="TextField"
+          infoText="lorem ipsum"
+          isInvalid={true}
+          errorText="Error text from TextField"
         />
       </div>
     </div>
