@@ -45,7 +45,7 @@ export const InputElement = forwardRef<HTMLInputElement, InputElementProps>(
     // which is placed absolute and does not adhere to the paddingLeft of the input
     const inputPaddingLeft = className?.match(/pl(.*?) /g);
     const lastOccurenceOfInputPaddingLeft =
-      inputPaddingLeft?.[(inputPaddingLeft ?? "").length - 1] ?? "";
+      inputPaddingLeft?.[(inputPaddingLeft ?? "").length - 1] ?? "pl-3";
 
     return (
       <label htmlFor={id} className="w-full">

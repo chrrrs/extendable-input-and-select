@@ -1,17 +1,26 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, ReactNode } from "react";
 import { InputGroup } from "../InputGroup";
 import { InputLeftElement, InputRightElement } from "../InputGroup/InputGroup";
 import { InputElement, InputElementProps } from "../InputElement";
 
-export interface InputProps extends InputElementProps {}
+export interface InputProps extends InputElementProps {
+  leftElement: ReactNode;
+  rightElement: ReactNode;
+  errorText?: string;
+}
 
 export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+  const { leftElement, rightElement, isInvalid, errorText, ...rest } = props;
+
   return (
-    <InputGroup>
-      <InputLeftElement>L</InputLeftElement>
-      <InputElement ref={ref} {...props} />
-      <InputRightElement>R</InputRightElement>
-    </InputGroup>
+    <>
+      <InputGroup>
+        {leftElement && <InputLeftElement>{leftElement}</InputLeftElement>}
+        <InputElement ref={ref} isInvalid={isInvalid} {...rest} />
+        {rightElement && <InputRightElement>{rightElement}</InputRightElement>}
+      </InputGroup>
+      {isInvalid && Boolean(errorText) && <div>{errorText}</div>}
+    </>
   );
 });
 
