@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Input } from "./tailwind/ui/Input";
 import { TextField } from "./tailwind/ui/TextField";
+import { PasswordField } from "./tailwind/ui/PasswordField";
 import "./styles.css";
 
 export default function App() {
@@ -35,6 +36,22 @@ export default function App() {
           onChange={(event) => setValue(event.target.value)}
           label="TextField"
           infoText="lorem ipsum"
+          isInvalid={true}
+          errorText="Error text from TextField"
+        />
+
+        <PasswordField
+          value={value}
+          onChange={(event) => setValue(event.target.value)}
+          label="TextField"
+          isInvalid={undefined}
+          errorText="Error text from TextField"
+        />
+
+        <PasswordField
+          value={value}
+          onChange={(event) => setValue(event.target.value)}
+          label="TextField"
           isInvalid={true}
           errorText="Error text from TextField"
         />
