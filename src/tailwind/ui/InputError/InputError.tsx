@@ -10,7 +10,7 @@ export const InputError = (props: InputErrorProps) => {
 
   return (
     <div
-      className="absolute pt-1 flex items-center pt-1 gap-1"
+      className="flex items-center pt-1 gap-1"
       role="alert"
       aria-live="assertive"
     >
