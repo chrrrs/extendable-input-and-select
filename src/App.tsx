@@ -84,11 +84,19 @@ export default function App() {
           value={selectValue}
           onChange={(event) => setSelectValue(event.target.value)}
           rightElement={<div className="w-4 h-4 bg-red-500" />}
+          isInvalid
+          errorText="Fejl"
         >
           <option value="" hidden></option>
           <option value="1">Dog</option>
           <option value="2">Cat</option>
           <option value="3">Turtle</option>
+          <option value="4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+            ipsam, excepturi odio voluptatibus nam, commodi ab fuga voluptas
+            error tenetur provident iure earum vel esse, praesentium laboriosam
+            tempore? Ab, et.
+          </option>
         </Select>
       </div>
     </div>

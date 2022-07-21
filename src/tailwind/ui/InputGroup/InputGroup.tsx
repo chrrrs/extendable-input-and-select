@@ -32,6 +32,8 @@ export const InputGroup = forwardRef<HTMLDivElement, InputGroupProps>(
     };
 
     const clones = validChildren.map((child: any) => {
+      console.log(child);
+
       switch (child.type.displayName) {
         case "InputElement":
         case "SelectElement":
@@ -49,20 +51,6 @@ export const InputGroup = forwardRef<HTMLDivElement, InputGroupProps>(
             )
           });
       }
-
-      // return child.type.displayName !== "InputElement"
-      //   ? cloneElement(child, {
-      //       ...child.props,
-      //       className: classNames(
-      //         "absolute flex justify-center items-center w-12 h-12",
-      //         setPlacement(child),
-      //         child.props.className
-      //       )
-      //     })
-      //   : cloneElement(child, {
-      //       ...child.props,
-      //       className: classNames(groupStyles, child.props.className, "w-full")
-      //     });
     });
 
     return (

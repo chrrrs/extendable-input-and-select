@@ -49,7 +49,7 @@ export const SelectElement = forwardRef<HTMLSelectElement, SelectElementProps>(
       inputPaddingLeft?.[(inputPaddingLeft ?? "").length - 1] ?? "pl-3";
 
     return (
-      <label htmlFor={id} className="w-full">
+      <label htmlFor={id} className="w-full flex">
         <select
           {...rest}
           ref={ref}
@@ -58,7 +58,7 @@ export const SelectElement = forwardRef<HTMLSelectElement, SelectElementProps>(
           aria-invalid={isInvalid}
           onBlur={handleBlur}
           className={classNames(
-            "block bg-white typo-body-m w-full box-border appearance-none h-12 rounded px-3 pt-4 pb-0 border border-solid border-grey-300",
+            "block bg-white typo-body-m w-full box-border appearance-none h-12 rounded px-3 pr-12 pt-4 pb-0 border border-solid border-grey-300",
             "focus:border-grey-900 focus-visible:outline-none empty:focus:placeholder:opacity-100 placeholder:opacity-0",
             "whitespace-nowrap overflow-hidden text-ellipsis",
             className,
