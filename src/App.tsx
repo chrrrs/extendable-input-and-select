@@ -3,11 +3,14 @@ import { Input } from "./tailwind/ui/Input";
 import { TextField } from "./tailwind/ui/TextField";
 import { PasswordField } from "./tailwind/ui/PasswordField";
 import { Select } from "./tailwind/ui/Select";
+import { SelectWithOptions } from "./tailwind/ui/SelectWithOptions";
 import "./styles.css";
+import { InputInfo } from "./tailwind/ui/InputInfo";
 
 export default function App() {
   const [value, setValue] = React.useState("");
   const [selectValue, setSelectValue] = React.useState("");
+  console.log(selectValue);
 
   return (
     <div className="container mx-auto w-4/5 my-10">
@@ -83,7 +86,7 @@ export default function App() {
           defaultValue=""
           value={selectValue}
           onChange={(event) => setSelectValue(event.target.value)}
-          rightElement={<div className="w-4 h-4 bg-red-500" />}
+          rightElement={<InputInfo text="Choose your favorite animal" />}
           isInvalid
           errorText="Fejl"
         >
@@ -98,6 +101,20 @@ export default function App() {
             tempore? Ab, et.
           </option>
         </Select>
+
+        <SelectWithOptions
+          label="Select with option props"
+          value={selectValue}
+          onChange={(event) => setSelectValue(event.target.value)}
+          options={
+            new Map([
+              ["", ""],
+              ["1", "Dog"],
+              ["2", "Cat"],
+              ["3", "Turtle"]
+            ])
+          }
+        />
       </div>
     </div>
   );
